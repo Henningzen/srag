@@ -3,7 +3,7 @@
   (:require [clojure.tools.build.api :as b]))
 
 (def lib 'no.jansenh/srag)
-(def version "0.1.0")
+(def version "0.1.1-SNAPSHOT")
 (def main 'no.jansenh.srag)
 (def class-dir "target/classes")
 

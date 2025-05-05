@@ -14,9 +14,9 @@ of [[https://keepachangelog.com/][keepchangelog.com]]
 
 ** 0.1.0 - 2025-05-05
 *** Added
-   + Files from the deps-new template.
-   + Initial project documentation.
-   + EmbeddingStore, MiniLmL6V2EmbeddingModel
++ Files from the deps-new template.
++ Initial project documentation.
++ EmbeddingStore, MiniLmL6V2EmbeddingModel
 
-[Unreleased]: https://github.com/Henningzen/srag/compare/0.1.0...HEAD
-[0.1.0]: https://github.com/Henningzen/srag/compare/0.1.0...0.1.0-SNAPSHOT
+[Unreleased]: https://github.com/Henningzen/srag/compare/0.1.1-SNAPSHOT...HEAD
+[0.1.0]: https://github.com/Henningzen/srag/compare/0.1.0...0.1.1-SNAPSHOT

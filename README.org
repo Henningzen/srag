@@ -40,7 +40,7 @@ Download from [[https://github.com/Henningzen/srag][https://github.com/Henningze
 ** CI pipeline
 #+BEGIN_SRC shell
   clojure -T:build ci
-  java -jar target/no.jansenh/srag-0.1.0-SNAPSHOT.jar
+  java -jar target/no.jansenh/srag-0.1.1-SNAPSHOT.jar
 #+END_SRC
 
 * Changelog

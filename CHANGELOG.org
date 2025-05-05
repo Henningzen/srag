@@ -1,0 +1,22 @@
+#+title:  README
+#+author: Henning Jansen <henning.jansen@jansenh.no>
+#+date:   2025-05-05
+#+STARTUP: overview
+
+* Change Log
+All notable changes to this project will be documented in this file. This
+hange log follows the conventions
+of [[https://keepachangelog.com/][keepchangelog.com]]
+
+** [Unreleased]
+*** Changed
++ Initial minimal viable project
+
+** 0.1.0 - 2025-05-05
+*** Added
+   + Files from the deps-new template.
+   + Initial project documentation.
+   + EmbeddingStore, MiniLmL6V2EmbeddingModel
+
+[Unreleased]: https://github.com/Henningzen/srag/compare/0.1.0...HEAD
+[0.1.0]: https://github.com/Henningzen/srag/compare/0.1.0...0.1.0-SNAPSHOT

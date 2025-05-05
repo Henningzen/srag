@@ -1,0 +1,51 @@
+#+title:  README
+#+author: Henning Jansen <henning.jansen@jansenh.no>
+#+date:   2025-05-05
+#+STARTUP: overview
+
+* Simple RAG - Retrieval Augmentet Generation.
+
+** Core idea:
+#+BEGIN_QUOTE
+Large language models (LLMs) are great at composition and reasoning, but
+their factual recall is limited to what was baked into their weights at
+pre-training time. 
+#+END_QUOTE
+
+RAG remedies this by:
+1. Retrieving relevant pieces of external knowledge on-the-fly with a fast
+   vector search;
+2. Supplying those snippets to a generator model, which uses
+   them to craft the final answer.
+
+
+  ‼️⚠️🚧 Under Construction 🚧️
+
+
+
+** Installation
+Download from [[https://github.com/Henningzen/srag][https://github.com/Henningzen/srag]]
+
+** Usage
+#+BEGIN_SRC shell
+  clojure -X:run-x
+#+END_SRC
+
+** Testing
+#+BEGIN_SRC shell
+  clojure -T:build test
+  clojure -X:test
+#+END_SRC
+
+** CI pipeline
+#+BEGIN_SRC shell
+  clojure -T:build ci
+  java -jar target/no.jansenh/srag-0.1.0-SNAPSHOT.jar
+#+END_SRC
+
+* Changelog
+  We keep a [[file:CHANGELOG.org][changelog]].
+
+* License
+Copyright © 2025 Henning Jansen
+Distributed under the [[https://www.gnu.org/licenses/gpl-3.0-standalone.html][GNU General Public License v3.0]]

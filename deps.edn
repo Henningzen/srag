@@ -1,0 +1,19 @@
+{:paths ["src" "resources"]
+ :deps {org.clojure/clojure {:mvn/version "1.12.0"}
+        org.scicloj/noj {:mvn/version "2-beta2"}
+        dev.langchain4j/langchain4j-document-parser-apache-pdfbox {:mvn/version "0.36.2"}
+        dev.langchain4j/langchain4j {:mvn/version "0.36.2"}
+        dev.langchain4j/langchain4j-open-ai {:mvn/version "0.36.2"}
+        dev.langchain4j/langchain4j-embeddings-all-minilm-l6-v2 {:mvn/version "0.36.2"}}
+ :aliases
+ {:run-m {:main-opts ["-m" "no.jansenh.srag"]}
+  :run-x {:ns-default no.jansenh.srag
+          :exec-fn greet
+          :exec-args {:name "Simple RAG"}}
+  :build {:deps {io.github.clojure/tools.build
+                 {:mvn/version "0.10.5"}}
+          :ns-default build}
+  :test {:extra-paths ["test"]
+         :extra-deps {org.clojure/test.check {:mvn/version "1.1.1"}
+                      io.github.cognitect-labs/test-runner
+                      {:git/tag "v0.5.1" :git/sha "dfb30dd"}}}}}

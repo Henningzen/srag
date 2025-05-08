@@ -7,7 +7,8 @@
 ;; -----------------------------------------------------------------------------
 
 (ns no.jansenh.srag
-  (:require [no.jansenh.srag.core :as core])
+  (:require [no.jansenh.srag.core :as core]
+            [cprop.core :refer [load-config]])
   (:gen-class))
 
 ;; Simple RAG - Retrieval Augmentet Generation
@@ -19,13 +20,18 @@
 ;; since:     0.1.0                     2025-05-05
 ;; version:   0.1.0
 ;; -----------------------------------------------------------------------------
+
+(defn get-config
+  "Get configurqation map."
+  [& rst]
+  (load-config))
+
 (defn simple-rag
   "Simple RAG - Retrieval Augmentet Generation."
-  [data]
+  [data & rst]
   nil)
 
 (defn -main
   "Application main entry point."
   [& args]
   (simple-rag args))
-  

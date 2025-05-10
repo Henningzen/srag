@@ -8,7 +8,8 @@
 
 (ns no.jansenh.srag
   (:require [no.jansenh.srag.core :as core]
-            [cprop.core :refer [load-config]])
+            [clojure.java.io :as io]
+            [clojure.edn :as edn])
   (:gen-class))
 
 ;; Simple RAG - Retrieval Augmentet Generation
@@ -22,9 +23,10 @@
 ;; -----------------------------------------------------------------------------
 
 (defn get-config
-  "Get configurqation map."
+  "Get configuration map."
   [& rst]
-  (load-config))
+  (with-open [reader (io/reader "resources/config.edn")]
+    (edn/read (java.io.PushbackReader. reader))))
 
 (defn simple-rag
   "Simple RAG - Retrieval Augmentet Generation."
